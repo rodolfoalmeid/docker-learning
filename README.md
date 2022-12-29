@@ -1,6 +1,16 @@
 Docker-learning
 ================
 
+------------------------------------------
+
+# Table of Contents
+
+1. [How to login to docker in the terminal](#how-to-login-to-docker-in-the-terminal)
+2. [How to create a docker image and push the image to Dockerhub](#how-to-create-a-docker-image-and-push-the-image-to-dockerhub)
+
+
+---------------
+
 ## How to login to docker in the terminal
 
 ```
@@ -12,7 +22,7 @@ Then it will ask to type a password.
 > Sometimes it is required to issue the commands using sudo
 
 
-## How to create a docker image and push the image.
+## How to create a docker image and push the image to Dockerhub
 
 ### Create a docker image
 
