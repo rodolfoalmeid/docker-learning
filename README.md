@@ -87,3 +87,40 @@ docker commit 3aee3f9bd45b lamp-server-template:v1.8.0
 Run `docker images` to see the new image created along with the associated tag:
 
 ![image](https://user-images.githubusercontent.com/113181949/209957013-389be021-b481-4907-86d3-2e365c58e20e.png)
+
+### Push Your Image to Docker Hub
+
+Before pushing the image to Docker Hub, add a description, your full name (FULL NAME in the example here), and Docker Hub username (USERNAME) in the docker commit:
+```
+docker commit -m "Added LAMP Server" -a "FULL NAME" d09dd0f24b58 USERNAME/lamp-server-template:v1.8.10.2017
+```
+
+Once this is fully tagged, log in and push it to Docker Hub:
+```
+docker login docker.io
+```
+
+You will be prompted for your Docker Hub credentials. When authentication succeeds, you will see Login succeeded. 
+
+![image](https://user-images.githubusercontent.com/113181949/209959895-75b9a915-6077-4076-ab77-3e03ee231fe3.png)
+
+Check the image repository with the command
+
+```
+docker images
+```
+![image](https://user-images.githubusercontent.com/113181949/209959739-b6ea92de-1dc1-4cc8-91b0-b7416e9ddb92.png)
+
+Now, you can push the image to the Hub with the command:
+
+```
+docker push rralmeid/lamp-server-template:v1.8.0
+```
+![image](https://user-images.githubusercontent.com/113181949/209959988-7ee22fa4-4500-45b7-b7d9-206771d02070.png)
+
+
+Open a browser, log in to your Docker Hub account, and go your main repository. You will see the new image listed. Click on the image and then click on the Tags tab to see the added tag:
+
+Our image, complete with tags, on Docker Hub
+
+![image](https://user-images.githubusercontent.com/113181949/209960783-1ab04815-e320-4f62-8837-55d963fd83f3.png)
