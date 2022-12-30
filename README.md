@@ -136,7 +136,8 @@ Our image, complete with tags, on Docker Hub
 
 ![image](https://user-images.githubusercontent.com/113181949/209960783-1ab04815-e320-4f62-8837-55d963fd83f3.png)
 
-### How to push images to Google Cloud
+How to push images to Google Cloud
+==================================
 
 1 - Login to google gcr.io
 
