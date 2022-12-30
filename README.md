@@ -7,6 +7,7 @@ Docker-learning
 
 1. [How to login to docker in the terminal](#how-to-login-to-docker-in-the-terminal)
 2. [How to create a docker image and push the image to Dockerhub](#how-to-create-a-docker-image-and-push-the-image-to-dockerhub)
+3. [How to push images to Google Cloud](#how-to-push-images-to-google-cloud)
 
 
 ---------------
@@ -134,3 +135,23 @@ Open a browser, log in to your Docker Hub account, and go your main repository. 
 Our image, complete with tags, on Docker Hub
 
 ![image](https://user-images.githubusercontent.com/113181949/209960783-1ab04815-e320-4f62-8837-55d963fd83f3.png)
+
+### How to push images to Google Cloud
+
+1 - Login to google gcr.io
+
+Login if using the old gcr.io
+```
+sudo cat neuvector-373118-2dd92e80c2ea.json | sudo docker login -u _json_key --password-stdin https://gcr.io
+```
+
+Login if using the new artifact Registry
+```
+sudo cat neuvector-373118-2dd92e80c2ea.json | sudo docker login -u _json_key --password-stdin https://us-docker.pkg.dev  
+```
+
+2 - Push image
+
+```
+sudo docker push us-docker.pkg.dev/neuvector-373118/gcr.io/ubuntu
+```
