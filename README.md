@@ -139,6 +139,12 @@ Our image, complete with tags, on Docker Hub
 How to push images to Google Cloud
 ==================================
 
+Requirements:
+- Install Docker in your computer
+- Set up a Google Cloud account and Project.
+
+
+
 1 - Login to google gcr.io
 
 Login if using the old gcr.io
