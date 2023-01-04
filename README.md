@@ -168,3 +168,8 @@ Push images to Artifact repository.
 ```
 sudo docker push us-docker.pkg.dev/neuvector-373118/gcr.io/ubuntu
 ```
+
+To leave kubectl cluster from cli.
+```
+kubectl config use-context my-cluster-name
+```
