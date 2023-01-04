@@ -145,7 +145,7 @@ Requirements:
 
 
 
-1 - Login to google gcr.io
+1 - Login to google repository
 
 Login if using the old gcr.io
 ```
@@ -159,6 +159,12 @@ sudo cat neuvector-373118-2dd92e80c2ea.json | sudo docker login -u _json_key --p
 
 2 - Push image
 
+Push images to gcr.io repository.
+```
+sudo docker push gcr.io/lofty-chemist-373111/lamp-server-template
+```
+
+Push images to Artifact repository.
 ```
 sudo docker push us-docker.pkg.dev/neuvector-373118/gcr.io/ubuntu
 ```
